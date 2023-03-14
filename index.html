@@ -8,7 +8,89 @@
     <title>Meme Maker</title>
   </head>
   <body>
+    <!--div안에 data-potato 는 나중에 event에서 data를 저장하게 만듬 그래서 manipulation가능-->
+    <div class="color-options">
+      <input type="color" id="color" />
+      <div
+        class="color-option"
+        style="background-color: #1abc9c"
+        data-color="#1abc9c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #3498db"
+        data-color="#3498db"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #34495e"
+        data-color="#34495e"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #27ae60"
+        data-color="#27ae60"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #8e44ad"
+        data-color="#8e44ad"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f1c40f"
+        data-color="#f1c40f"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e74c3c"
+        data-color="#e74c3c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #95a5a6"
+        data-color="#95a5a6"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #d35400"
+        data-color="#d35400"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #bdc3c7"
+        data-color="#bdc3c7"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2ecc71"
+        data-color="#2ecc71"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e67e22"
+        data-color="#e67e22"
+      ></div>
+    </div>
+
     <canvas></canvas>
-    <script src="JS/app.js"></script>
+    <div class="btns">
+      <input
+        id="line-width"
+        type="range"
+        required
+        min="1"
+        max="10"
+        step="0.1"
+        value="5"
+      />
+      <button id="mode-btn">Fill</button>
+      <button id="destroy">Destroy</button>
+      <button id="erase">Erase</button>
+      <input type="file" id="file" accept="image/*" />
+      <input type="text" placeholder="Write a then double click" id="text" />
+      <button id="save">Save</button>
+    </div>
+    <script src="JS/mounsepainting.js"></script>
   </body>
 </html>
